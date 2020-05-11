@@ -1,0 +1,14 @@
+@mixin transition($value) {
+    transition: $value;
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    -o-transition: $value;
+    }
+    @mixin box-shadow($vertical, $horizontal, $blur, $spread, $color) {
+        -webkit-box-shadow: $vertical $horizontal $blur $spread $color;
+        -moz-box-shadow: $vertical $horizontal $blur $spread $color;
+        -ms-box-shadow: $vertical $horizontal $blur $spread $color;
+        -o-box-shadow: $vertical $horizontal $blur $spread $color;
+        box-shadow: $vertical $horizontal $blur $spread $color;
+        }

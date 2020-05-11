@@ -1,31 +1,44 @@
 @import "_variables";
+@import "_mixin";
 .header { 
   grid-area: header; 
-  height: 150px;
+  height: 150px;   
+   background-repeat: no-repeat;
+  background-size: cover;
+  @include transition(0.8s);
+  @include box-shadow(4px, 8px, 12px, 7px, hsla(171, 9%, 27%, 0.25));
 }
 .navi { 
   grid-area: navi;
   height: 20px; 
+  @include box-shadow(4px, 8px, 12px, 7px, hsla(171, 9%, 27%, 0.25));
  }
 .content { 
   grid-area: page;
   height: 500px;
+  @include box-shadow(4px, 8px, 12px, 7px, hsla(171, 9%, 27%, 0.25));
  }
 .item1 {
   grid-area: i1;
   height: 300px;
+  @include box-shadow(4px, 8px, 12px, 7px, hsla(171, 9%, 27%, 0.25));
 }
 .item2 {
   grid-area: i2;
   height: 300px;
+  @include box-shadow(4px, 8px, 12px, 7px, hsla(171, 9%, 27%, 0.25));
+  
 }
 .item3 {
   grid-area: i3;
   height: 300px;
+  @include box-shadow(4px, 8px, 12px, 7px, hsla(171, 9%, 27%, 0.25));
 }
 .footer-grid {
   grid-area: footer;
   height: 200px;
+  box-shadow: 2px, 8px, 14px, 0px, rgba(62, 75, 73, 0.25);
+  @include box-shadow(4px, 8px, 12px, 7px, hsla(171, 9%, 27%, 0.25));
 }
 .container-gird{
     display: grid;
@@ -36,8 +49,9 @@
     'i1 i1 i2 i2 i3 i3'
     'footer footer footer footer footer footer';
     grid-gap: 15px;
-    background-color:$green;
+    
     padding: 20px;
+    
 }
    .container-gird > div {
   background-color:$yellow;

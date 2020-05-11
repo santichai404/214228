@@ -1,0 +1,19 @@
+@import "_variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+     min-height: 100vh;
+    background: linear-gradient(
+    9deg,
+    $a1,
+    $a2,
+    $a3,
+    $a4,
+    $a5,
+    $a6
+    );
+    }
